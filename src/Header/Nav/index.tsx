@@ -29,7 +29,7 @@ export const HeaderNav: React.FC<{ data: HeaderType; venues: Venue[] }> = ({ dat
   // Render custom buttons with variants
   const renderButtons = () => {
     return buttons.map((button, index) => {
-      const buttonProps: any = {
+      const buttonProps = {
         variant: button.variant || 'default',
         size: button.size || 'default',
         className: cn(button.customClasses),

@@ -4,6 +4,7 @@ import type { Block } from 'payload'
 
 export const NavCardBlock: Block = {
   slug: 'navCardBlock',
+  imageURL: '/navCardBlock.png',
   labels: {
     singular: 'Navigation Cards',
     plural: 'Navigation Cards',

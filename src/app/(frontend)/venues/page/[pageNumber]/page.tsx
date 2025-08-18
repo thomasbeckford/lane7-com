@@ -1,12 +1,16 @@
 import type { Metadata } from 'next/types'
 
+import { LivePreviewListener } from '@/components/LivePreviewListener'
 import { PageRange } from '@/components/PageRange'
 import { Pagination } from '@/components/Pagination'
+import { PayloadRedirects } from '@/components/PayloadRedirects'
 import { VenueCollectionArchive } from '@/components/Venues/VenuesCollectionArchive'
+import { RenderHero } from '@/heros/RenderHero'
 import configPromise from '@payload-config'
-import Link from 'next/link'
+import { draftMode } from 'next/headers'
 import { notFound } from 'next/navigation'
 import { getPayload } from 'payload'
+import { cache, unstable_ViewTransition as ViewTransition } from 'react'
 import PageClient from './page.client'
 
 export const revalidate = 600
@@ -33,17 +37,34 @@ export default async function Page({ params: paramsPromise }: Args) {
     overrideAccess: false,
   })
 
-  return (
-    <div>
-      <PageClient />
-      <div className="container mb-16">
-        <div className="prose dark:prose-invert max-w-none">
-          <Link href="/venues">
-            <h1>Venues Page {pageNumber}</h1>
-          </Link>
-        </div>
-      </div>
+  const { isEnabled: draft } = await draftMode()
 
+  console.log('venues', venues)
+
+  const page = await queryPageBySlug({
+    slug: 'venues',
+  })
+
+  const { hero } = page
+
+  return (
+    <ViewTransition>
+      <article>
+        <PageClient />
+        {/* Allows redirects for valid pages too */}
+        <PayloadRedirects disableNotFound url={'/venues'} />
+
+        {draft && <LivePreviewListener />}
+
+        <RenderHero {...hero} />
+
+        <VenueCollectionArchive venues={venues.docs} />
+        <div className="container">
+          {venues.totalPages > 1 && venues.page && (
+            <Pagination page={venues.page} totalPages={venues.totalPages} relationTo="venues" />
+          )}
+        </div>
+      </article>
       <div className="container mb-8">
         <PageRange
           collection="venues"
@@ -52,15 +73,7 @@ export default async function Page({ params: paramsPromise }: Args) {
           totalDocs={venues.totalDocs}
         />
       </div>
-
-      <VenueCollectionArchive venues={venues.docs} />
-
-      <div className="container">
-        {venues?.page && venues?.totalPages > 1 && (
-          <Pagination page={venues.page} totalPages={venues.totalPages} relationTo="venues" />
-        )}
-      </div>
-    </div>
+    </ViewTransition>
   )
 }
 
@@ -88,3 +101,24 @@ export async function generateStaticParams() {
 
   return pages
 }
+
+const queryPageBySlug = cache(async ({ slug }: { slug: string }) => {
+  const { isEnabled: draft } = await draftMode()
+
+  const payload = await getPayload({ config: configPromise })
+
+  const result = await payload.find({
+    collection: 'pages',
+    draft,
+    limit: 1,
+    pagination: false,
+    overrideAccess: draft,
+    where: {
+      slug: {
+        equals: slug,
+      },
+    },
+  })
+
+  return result.docs?.[0] || null
+})

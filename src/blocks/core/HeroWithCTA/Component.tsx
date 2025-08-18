@@ -4,11 +4,12 @@
 
 import { CMSLink } from '@/components/Link'
 import { Media } from '@/components/Media'
+import { Media as MediaResource } from '@/payload-types'
 import React, { useState } from 'react'
 
 type Props = {
   variant?: 'basic' | 'newsletter' | 'promo'
-  backgroundImage?: any
+  backgroundImage?: MediaResource
   overlayOpacity?: number
   eyebrow?: string
   heading?: string
@@ -16,13 +17,11 @@ type Props = {
   primaryButton?: {
     text: string
     type: 'reference' | 'custom'
-    reference?: any
     url?: string
   }
   secondaryButton?: {
     text?: string
     type?: 'reference' | 'custom'
-    reference?: any
     url?: string
   }
   newsletterSettings?: {

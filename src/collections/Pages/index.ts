@@ -14,6 +14,8 @@ import { populatePublishedAt } from '../../hooks/populatePublishedAt'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
 import { revalidateDelete, revalidatePage } from './hooks/revalidatePage'
 
+import { MediaTextBlock } from '@/blocks/content/MediaTextBlock/config'
+import { Testimonials } from '@/blocks/content/Testimonials/config'
 import {
   MetaDescriptionField,
   MetaImageField,
@@ -76,7 +78,16 @@ export const Pages: CollectionConfig<'pages'> = {
             {
               name: 'layout',
               type: 'blocks',
-              blocks: [CallToAction, Content, MediaBlock, Archive, FormBlock, NavCardBlock],
+              blocks: [
+                CallToAction,
+                Content,
+                MediaBlock,
+                Archive,
+                FormBlock,
+                NavCardBlock,
+                Testimonials,
+                MediaTextBlock,
+              ],
               required: true,
               admin: {
                 initCollapsed: true,

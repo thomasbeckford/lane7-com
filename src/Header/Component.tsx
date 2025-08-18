@@ -1,3 +1,4 @@
+import { Marquee, MarqueeContent, MarqueeItem } from '@/components/AutoTextMarquee'
 import { Logo } from '@/components/Logo/Logo'
 import { HeaderClient } from '@/Header/Component.client'
 import type { Header, Venue } from '@/payload-types'
@@ -33,7 +34,7 @@ export async function Header() {
     const logoData = headerData?.logo
 
     if (logoData?.image && typeof logoData.image === 'object') {
-      const logoImage = logoData.image as any
+      const logoImage = logoData.image
 
       return (
         <Image
@@ -51,13 +52,38 @@ export async function Header() {
   }
 
   return (
-    <header className="px-4 py-2 absolute top-0 z-20 flex items-center w-full justify-between bg-transparent">
-      <HeaderClient />
-      <Link href="/" className="shrink-0">
-        {renderLogo()}
-      </Link>
+    <>
+      <header>
+        <HeaderClient />
 
-      <HeaderNav data={headerData} venues={venues} />
-    </header>
+        {headerData?.topMarquee?.enabled && (
+          <Marquee>
+            <MarqueeContent className="border-t-2 border-b-2 border-gray-200 p-1 bg-background">
+              {new Array(10).fill(null).map((_, index) => (
+                <MarqueeItem key={index} className="m-0">
+                  <Link
+                    href={headerData?.topMarquee?.url}
+                    className="hover:text-red-400 text-md  px-1"
+                  >
+                    {headerData?.topMarquee?.text}
+                  </Link>
+                  <span className="text-md px-1">|</span>
+                </MarqueeItem>
+              ))}
+            </MarqueeContent>
+          </Marquee>
+        )}
+
+        <div
+          className={`${headerData?.topMarquee?.enabled ? 'mt-12' : ''} px-4 absolute top-0 z-20 flex items-center w-full justify-between bg-transparent`}
+        >
+          <Link href="/" className="shrink-0">
+            {renderLogo()}
+          </Link>
+
+          <HeaderNav data={headerData} venues={venues} />
+        </div>
+      </header>
+    </>
   )
 }

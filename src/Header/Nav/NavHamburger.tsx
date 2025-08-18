@@ -69,11 +69,10 @@ export default function NavHamburger({ buttons, navItems }: NavHamburgerProps) {
           {/* Render navigation items */}
           {renderNavItems()}
 
-          {/* Render buttons in hamburger menu if there are any */}
           {buttons?.length > 0 && (
             <div className="pt-4 border-t border-gray-200 space-y-2">
               {buttons?.map((button, index) => {
-                const buttonProps: any = {
+                const buttonProps = {
                   variant: button.variant || 'default',
                   size: button.size || 'default',
                   className: cn(button.customClasses, 'w-full justify-start'),

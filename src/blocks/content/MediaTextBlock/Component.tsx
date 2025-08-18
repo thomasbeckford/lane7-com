@@ -3,28 +3,13 @@
 import { CMSLink } from '@/components/Link'
 import { Media } from '@/components/Media'
 import RichText from '@/components/RichText'
+import { Button } from '@/components/ui/button'
 import React from 'react'
+import type { Page } from '../../../payload-types'
 
-type Props = {
-  layout?: 'image-left' | 'text-left'
-  image?: any
-  imageAspect?: 'square' | 'landscape' | 'portrait' | 'auto'
-  eyebrow?: string
-  heading?: string
-  content?: any
-  buttons?: Array<{
-    text: string
-    style?: 'primary' | 'secondary' | 'link'
-    type?: 'reference' | 'custom'
-    reference?: any
-    url?: string
-  }>
-  backgroundColor?: string
-  textColor?: 'auto' | 'white' | 'black'
-  verticalAlignment?: 'center' | 'start' | 'end'
-}
+type MediaTextBlockType = Extract<Page['layout'][number], { blockType: 'mediaTextBlock' }>
 
-export const MediaTextBlock: React.FC<Props> = ({
+export const MediaTextBlock: React.FC<MediaTextBlockType> = ({
   layout = 'text-left',
   image,
   imageAspect = 'auto',
@@ -42,7 +27,7 @@ export const MediaTextBlock: React.FC<Props> = ({
 
     // Auto-determine based on background
     const darkBackgrounds = ['black', 'gray-900']
-    return darkBackgrounds.includes(backgroundColor) ? 'text-white' : 'text-black'
+    return darkBackgrounds.includes(backgroundColor || '') ? 'text-white' : 'text-black'
   }
 
   // Get aspect ratio classes
@@ -71,31 +56,9 @@ export const MediaTextBlock: React.FC<Props> = ({
     }
   }
 
-  // Get button styles
-  const getButtonClasses = (style: string) => {
-    const isDark = backgroundColor === 'black' || backgroundColor === 'gray-900'
-
-    switch (style) {
-      case 'primary':
-        return isDark
-          ? 'bg-white text-black hover:bg-gray-200'
-          : 'bg-black text-white hover:bg-gray-800'
-      case 'secondary':
-        return isDark
-          ? 'border-2 border-white text-white hover:bg-white hover:text-black'
-          : 'border-2 border-black text-black hover:bg-black hover:text-white'
-      case 'link':
-        return isDark
-          ? 'text-white hover:text-gray-300 underline'
-          : 'text-black hover:text-gray-600 underline'
-      default:
-        return getButtonClasses('primary')
-    }
-  }
-
   const textColorClass = getTextColor()
   const isImageLeft = layout === 'image-left'
-  const bgClass = backgroundColor === 'white' ? 'bg-white' : `bg-${backgroundColor}`
+  const bgClass = backgroundColor === 'white' ? 'bg-white' : `bg-${backgroundColor || ''}`
 
   return (
     <section className={`py-16 md:py-24 ${bgClass} ${textColorClass}`}>
@@ -140,21 +103,17 @@ export const MediaTextBlock: React.FC<Props> = ({
             )}
 
             {/* Buttons */}
-            {buttons.length > 0 && (
-              <div className="flex flex-col sm:flex-row gap-4">
-                {buttons.map((button, index) => (
-                  <CMSLink
-                    key={index}
-                    {...button}
-                    className={`inline-block px-8 py-3 font-semibold tracking-wider uppercase transition-colors ${getButtonClasses(button.style || 'primary')} ${
-                      button.style === 'link' ? 'px-0 py-0' : ''
-                    }`}
-                  >
-                    {button.text}
-                  </CMSLink>
-                ))}
-              </div>
-            )}
+            {buttons?.length
+              ? buttons.length > 0
+              : false && (
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    {buttons?.map((button, index) => (
+                      <CMSLink key={index} {...button}>
+                        <Button>{button.text}</Button>
+                      </CMSLink>
+                    ))}
+                  </div>
+                )}
           </div>
         </div>
       </div>

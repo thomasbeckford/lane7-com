@@ -57,6 +57,8 @@ export default async function Page() {
     overrideAccess: false,
   })
 
+  console.log('venues', venues)
+
   const page = await queryPageBySlug({
     slug: 'venues',
   })
@@ -74,14 +76,6 @@ export default async function Page() {
 
         <RenderHero {...hero} />
 
-        <div className="container mb-8">
-          <PageRange
-            collection="venues"
-            currentPage={venues.page}
-            limit={2}
-            totalDocs={venues.totalDocs}
-          />
-        </div>
         <VenueCollectionArchive venues={venues.docs} />
         <div className="container">
           {venues.totalPages > 1 && venues.page && (
@@ -89,6 +83,14 @@ export default async function Page() {
           )}
         </div>
       </article>
+      <div className="container mb-8">
+        <PageRange
+          collection="venues"
+          currentPage={venues.page}
+          limit={2}
+          totalDocs={venues.totalDocs}
+        />
+      </div>
     </ViewTransition>
   )
 }

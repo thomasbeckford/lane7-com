@@ -4,6 +4,7 @@ import type { Block } from 'payload'
 
 export const MediaTextBlock: Block = {
   slug: 'mediaTextBlock',
+  imageURL: '/mediaTextBlock1.png',
 
   labels: {
     singular: 'Media Text Block',
@@ -101,7 +102,7 @@ export const MediaTextBlock: Block = {
               value: variant,
             }),
           ),
-          defaultValue: 'lane7-primary',
+          defaultValue: 'default',
         },
         {
           name: 'type',

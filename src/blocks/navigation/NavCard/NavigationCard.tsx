@@ -1,4 +1,5 @@
 import { Media } from '@/components/Media'
+import { Media as MediaResource } from '@/payload-types'
 import Link from 'next/link'
 
 // NavigationCard.tsx - Solo cambiar la interfaz
@@ -7,11 +8,11 @@ interface NavigationCardProps {
     id?: string
     title: string
     description?: string
-    image?: any
+    image?: MediaResource
     overlayOpacity?: number
     link?: {
       type?: 'custom' | 'reference'
-      reference?: any
+      reference?: { value: { slug: string; relationTo: string }; relationTo: string }
       url?: string
       label?: string
       newTab?: boolean

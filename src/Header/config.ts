@@ -55,6 +55,29 @@ export const Header: GlobalConfig = {
         description: 'Configure the header logo',
       },
     },
+
+    {
+      name: 'topMarquee',
+      type: 'group',
+      fields: [
+        {
+          name: 'enabled',
+          type: 'checkbox',
+          defaultValue: true,
+        },
+        {
+          name: 'text',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'url',
+          type: 'text',
+          required: true,
+        },
+      ],
+    },
+
     // ⭐ NUEVO: Campo para elementos de navegación del menú hamburguesa
     {
       name: 'navItems',

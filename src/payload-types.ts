@@ -248,6 +248,105 @@ export interface Page {
         blockName?: string | null;
         blockType: 'navCardBlock';
       }
+    | {
+        /**
+         * Section heading
+         */
+        heading: string;
+        testimonials?:
+          | {
+              /**
+               * Customer testimonial text
+               */
+              quote: string;
+              /**
+               * Customer name
+               */
+              author: string;
+              /**
+               * Review location (e.g., "REVIEW OF BIRMINGHAM")
+               */
+              location: string;
+              /**
+               * Star rating (1-5)
+               */
+              rating?: number | null;
+              /**
+               * Card color scheme
+               */
+              variant?: ('black-white' | 'white-black') | null;
+              id?: string | null;
+            }[]
+          | null;
+        backgroundColor?: ('black' | 'gray-900' | 'custom') | null;
+        /**
+         * Auto-scroll through testimonials
+         */
+        autoplay?: boolean | null;
+        /**
+         * Time between slides (milliseconds)
+         */
+        autoplaySpeed?: number | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'testimonials';
+      }
+    | {
+        /**
+         * Choose the layout arrangement
+         */
+        layout?: ('image-left' | 'text-left') | null;
+        /**
+         * Image for the split section
+         */
+        image: string | Media;
+        imageAspect?: ('square' | 'landscape' | 'portrait' | 'auto') | null;
+        /**
+         * Small text above heading (optional)
+         */
+        eyebrow?: string | null;
+        /**
+         * Main heading text
+         */
+        heading: string;
+        /**
+         * Rich text content
+         */
+        content?: {
+          root: {
+            type: string;
+            children: {
+              type: string;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        buttons?:
+          | {
+              text: string;
+              style?: ('default' | 'secondary' | 'destructive' | 'outline' | 'ghost' | 'link') | null;
+              type?: ('reference' | 'custom') | null;
+              reference?: {
+                relationTo: 'pages';
+                value: string | Page;
+              } | null;
+              url?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        backgroundColor?: ('white' | 'gray-50' | 'gray-900' | 'black') | null;
+        textColor?: ('auto' | 'white' | 'black') | null;
+        verticalAlignment?: ('center' | 'start' | 'end') | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'mediaTextBlock';
+      }
   )[];
   meta?: {
     title?: string | null;
@@ -1175,6 +1274,51 @@ export interface PagesSelect<T extends boolean = true> {
               id?: T;
               blockName?: T;
             };
+        testimonials?:
+          | T
+          | {
+              heading?: T;
+              testimonials?:
+                | T
+                | {
+                    quote?: T;
+                    author?: T;
+                    location?: T;
+                    rating?: T;
+                    variant?: T;
+                    id?: T;
+                  };
+              backgroundColor?: T;
+              autoplay?: T;
+              autoplaySpeed?: T;
+              id?: T;
+              blockName?: T;
+            };
+        mediaTextBlock?:
+          | T
+          | {
+              layout?: T;
+              image?: T;
+              imageAspect?: T;
+              eyebrow?: T;
+              heading?: T;
+              content?: T;
+              buttons?:
+                | T
+                | {
+                    text?: T;
+                    style?: T;
+                    type?: T;
+                    reference?: T;
+                    url?: T;
+                    id?: T;
+                  };
+              backgroundColor?: T;
+              textColor?: T;
+              verticalAlignment?: T;
+              id?: T;
+              blockName?: T;
+            };
       };
   meta?:
     | T
@@ -1767,6 +1911,11 @@ export interface Header {
      */
     height?: number | null;
   };
+  topMarquee: {
+    enabled?: boolean | null;
+    text: string;
+    url: string;
+  };
   /**
    * Navigation items for the hamburger menu
    */
@@ -1907,6 +2056,13 @@ export interface HeaderSelect<T extends boolean = true> {
         alt?: T;
         width?: T;
         height?: T;
+      };
+  topMarquee?:
+    | T
+    | {
+        enabled?: T;
+        text?: T;
+        url?: T;
       };
   navItems?:
     | T

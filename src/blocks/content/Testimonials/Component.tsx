@@ -4,25 +4,16 @@
 
 import { Marquee, MarqueeContent, MarqueeFade, MarqueeItem } from '@/components/AutoTextMarquee'
 import React from 'react'
+import type { Page } from '../../../payload-types'
 
-type Props = {
-  heading?: string
-  testimonials?: Array<{
-    quote: string
-    author: string
-    location: string
-    rating?: number
-    variant?: 'black-white' | 'white-black'
-  }>
-  backgroundColor?: string
-  autoplay?: boolean
-  autoplaySpeed?: number
-}
+// Cambiar 'testimonialBlock' por 'testimonials'
+type TestimonialBlockType = Extract<Page['layout'][number], { blockType: 'testimonials' }>
 
-export const TestimonialBlock: React.FC<Props> = ({
+export const TestimonialBlock: React.FC<TestimonialBlockType> = ({
   heading = 'WHAT OUR GUESTS SAID',
   testimonials = [],
   backgroundColor = 'black',
+  autoplaySpeed = 2000,
 }) => {
   const renderStars = (rating: number = 5, variant: string = 'white-black') => {
     const activeColor = variant === 'black-white' ? 'text-yellow-400' : 'text-yellow-500'
@@ -35,9 +26,11 @@ export const TestimonialBlock: React.FC<Props> = ({
     ))
   }
 
-  if (!testimonials.length) return null
+  if (!testimonials?.length) return null
 
   const bgColor = backgroundColor === 'custom' ? 'bg-gray-900' : `bg-${backgroundColor}`
+
+  console.log('testimonials', autoplaySpeed)
 
   return (
     <section className={`py-16 ${bgColor} text-white relative overflow-hidden`}>
@@ -52,8 +45,8 @@ export const TestimonialBlock: React.FC<Props> = ({
           <MarqueeFade side="left" />
           <MarqueeFade side="right" />
 
-          <MarqueeContent speed={30} pauseOnHover={true}>
-            {testimonials.map((testimonial, index) => {
+          <MarqueeContent speed={autoplaySpeed || 2000} pauseOnHover={true}>
+            {testimonials?.map((testimonial, index) => {
               const isBlackBg = testimonial.variant === 'black-white'
               const cardBg = isBlackBg ? 'bg-black' : 'bg-white'
               const textColor = isBlackBg ? 'text-white' : 'text-black'
@@ -68,7 +61,10 @@ export const TestimonialBlock: React.FC<Props> = ({
                       <div>
                         {/* Stars */}
                         <div className="flex justify-start">
-                          {renderStars(testimonial.rating, testimonial.variant)}
+                          {renderStars(
+                            testimonial.rating || 5,
+                            testimonial.variant || 'white-black',
+                          )}
                         </div>
 
                         {/* Location */}

@@ -1,4 +1,4 @@
-// src/blocks/NavigationCards/types.ts
+import { Media as MediaResource } from '@/payload-types'
 
 export interface NavigationCardsType {
   heading?: string
@@ -9,10 +9,11 @@ export interface NavigationCardsType {
   cards?: Array<{
     title: string
     description?: string // ← Hacer opcional para banner
-    image?: any // o el tipo específico de tu Media
+    image?: MediaResource
+
     link?: {
       type?: 'custom' | 'reference'
-      reference?: any
+      reference?: { value: { slug: string; relationTo: string }; relationTo: string }
       url?: string
       label?: string
     }

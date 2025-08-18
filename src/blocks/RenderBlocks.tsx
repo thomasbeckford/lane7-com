@@ -3,6 +3,7 @@ import React, { Fragment } from 'react'
 import type { Page } from '@/payload-types'
 
 import { MediaBlock } from '@/blocks/content/MediaBlock/Component'
+import { MediaTextBlock } from '@/blocks/content/MediaTextBlock/Component'
 import { TestimonialBlock } from '@/blocks/content/Testimonials/Component'
 import { ArchiveBlock } from '@/blocks/core/ArchiveBlock/Component'
 import { CallToActionBlock } from '@/blocks/core/CallToAction/Component'
@@ -18,6 +19,7 @@ const blockComponents = {
   mediaBlock: MediaBlock,
   navCardBlock: NavCardBlock,
   testimonials: TestimonialBlock,
+  mediaTextBlock: MediaTextBlock,
 }
 
 export const RenderBlocks: React.FC<{
