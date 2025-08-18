@@ -1,0 +1,653 @@
+[
+  {
+    "id": 1916,
+    "slug": "dublin-dundrum",
+    "title": "Dublin Dundrum",
+    "hero_title": "Lane7 Dundrum: Dublin's Boutique Bowling and Games Bar",
+    "description": "Discover the ultimate entertainment destination in Dundrum! Lane7 Dundrum, opened on January 31st, is the best new bar packed with all your favourite games. Enjoy boutique bowling, pool, darts, shuffleboard, beer pong, and so much more. Are you ready for all your best nights in one?",
+    "address": "Dundrum Town Centre, Sandyford Road, Dundrum, Dublin 16, D16K8Y9, Ireland",
+    "latitude": 53.2878,
+    "longitude": -6.2439,
+    "phone": "",
+    "email": "",
+    "booking_url": "https://lane7-new.bookedit.online/booking-desktop/",
+    "menu_url": "https://lane7-new.bookedit.online/booking-desktop/",
+    "opening_hours": "Monday – Thursday  : 11am – 11.30pm | Friday - Saturday: 11am – 12.30am | Sunday: 12.30pm – 11pm",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "dublin-dundrum-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/10/Dundrum.webp"
+      },
+      {
+        "type": "hero_image",
+        "filename": "dublin-dundrum-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Durham-Venues-Page1-2.webp"
+      },
+      {
+        "type": "map",
+        "filename": "dublin-dundrum-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/10/Lane7DundrumMap-3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 884,
+    "slug": "milton-keynes",
+    "title": "Milton Keynes",
+    "hero_title": "Milton Keynes Bowling & Activity Bar",
+    "description": "Milton Keynes, are you ready for all your best nights in one? Lane7 Milton Keynes is coming Friday 21st March 2025.\r\nOur biggest venue yet, with 14 bowling lanes, a roller rink, bumper cars, golf simulators, Playground, karaoke rooms for you to sing your heart out in, retro gaming stations, beer pong, pool and darts so you can get your Luke Littler on.\r\nAll accompanied by killer food, drinks and unbeatable vibes. Enjoy all the games at our new activity bar.",
+    "address": "Lane7 Milton Keynes, 38 Midsummer Place, Milton Keynes, MK9 3GA.",
+    "latitude": 52.0406,
+    "longitude": -0.7594,
+    "phone": "",
+    "email": "loremipsum@loremipsum.com",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/milton-keynes-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/MKFoodMenu-2-1.pdf",
+    "opening_hours": "Sunday - Thursday: 11am - 12am | Friday and Saturday: 11am - 1.30am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "milton-keynes-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/06/L7_MK_BlackonWhite-3.png"
+      },
+      {
+        "type": "hero_image",
+        "filename": "milton-keynes-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/06/LSP_Lane7_2_LSP6146-min.jpg"
+      },
+      {
+        "type": "map",
+        "filename": "milton-keynes-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/06/Lane7MKMap.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 883,
+    "slug": "london-camden",
+    "title": "London Camden",
+    "hero_title": "Camden Bowling and Games Bar",
+    "description": "Imagine the best bar you've been to, then add all your favourite gaming. Bowling, darts, pool AND Play Dirty...\r\nCheck 'em all out at Lane7 London Camden",
+    "address": "Basement and Ground Floor, Hawley Wharf, 1-6 Water Ln., London NW1 8JZ-",
+    "latitude": 51.5408,
+    "longitude": -0.1434,
+    "phone": "0191 261 6161",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/london-camden-booking/",
+    "menu_url": "https://lane7-new.bookedit.online/booking-desktop/",
+    "opening_hours": "",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "london-camden-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/07/Lane7CamdenWhite.webp"
+      },
+      {
+        "type": "hero_image",
+        "filename": "london-camden-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Leicester-3.webp"
+      },
+      {
+        "type": "map",
+        "filename": "london-camden-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/06/CamdenMap-1.png"
+      }
+    ]
+  },
+  {
+    "id": 882,
+    "slug": "altrincham",
+    "title": "Altrincham",
+    "hero_title": "ALTRINCHAM BOWLING AND GAMES BAR",
+    "description": "Altrincham's very best bowling alley and games bar. Treat yourself to karaoke, darts, pool, shuffleboard and more. Lane7 Altrincham brings it EVERY. SINGLE. TIME.  ",
+    "address": "6 Stamford New Road, Altrincham, WA14 1EJ",
+    "latitude": 53.3879,
+    "longitude": -2.3487,
+    "phone": "0161 669 2430",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/altrincham-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-2-v2.pdf",
+    "opening_hours": "Monday – Thursday: 3pm - 12am | Friday - Saturday: 11am - 1am | Sunday: 11am - 12am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "altrincham-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/06/AltrinchamLogoWhite-1.png"
+      },
+      {
+        "type": "hero_image",
+        "filename": "altrincham-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/06/Lane7_Victoria-225_8inch-1.webp"
+      },
+      {
+        "type": "map",
+        "filename": "altrincham-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/06/mapa_Altrincham.webp"
+      }
+    ]
+  },
+  {
+    "id": 881,
+    "slug": "belfast",
+    "title": "Belfast",
+    "hero_title": "Belfast Activity Bar",
+    "description": "Imagine the best bar you've been to, then add all your favourite gaming. Bowling, karaoke, darts, pool, shuffleoard AND arcades...\r\nCheck 'em all out at Lane7 Belfast",
+    "address": "-",
+    "latitude": 54.5973,
+    "longitude": -5.9301,
+    "phone": "00000 000000",
+    "email": "loremipsum@loremipsum.com",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/#",
+    "opening_hours": "Monday – Thursday: - | Friday - Saturday: - | Sunday: -",
+    "images": []
+  },
+  {
+    "id": 880,
+    "slug": "york",
+    "title": "York",
+    "hero_title": "York Activity Bar",
+    "description": "Imagine the best bar you've been to, then add all your favourite gaming. Bowling, karaoke, darts, pool, shuffleoard AND arcades...\r\nCheck 'em all out at Lane7 York",
+    "address": "-",
+    "latitude": 53.96,
+    "longitude": -1.0873,
+    "phone": "00000 000000",
+    "email": "loremipsum@loremipsum.com",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/#",
+    "opening_hours": "Monday – Thursday: - | Friday - Saturday: - | Sunday: -",
+    "images": []
+  },
+  {
+    "id": 879,
+    "slug": "dublin-chatham",
+    "title": "Dublin 2",
+    "hero_title": "Dublin City Cntre Bowling and Games Bar",
+    "description": "Dublin City Centre, Lane7 is ALMOST ready for you. Launching in Spring 2025, our Chatham St venue will feature bowling like you've never seen before, beer pong, darts. Oh, and did we mention our next level bar? See you soon, Dublin.",
+    "address": "-",
+    "latitude": 53.3398,
+    "longitude": -6.2603,
+    "phone": "00000 000000",
+    "email": "loremipsum@loremipsum.com",
+    "booking_url": "",
+    "menu_url": "https://forms.stampede.ai/c3230509-7a74-49ab-a578-068663527737",
+    "opening_hours": "Monday – Thursday: - | Friday - Saturday: - | Sunday: -",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "dublin-chatham-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/06/1431b327-cc54-49f3-a19c-333c0e4668c0.png"
+      },
+      {
+        "type": "hero_image",
+        "filename": "dublin-chatham-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/06/Altrincham-Hero.jpg"
+      }
+    ]
+  },
+  {
+    "id": 878,
+    "slug": "cardiff",
+    "title": "Cardiff",
+    "hero_title": "Cardiff Activity Bar",
+    "description": "Imagine the best bar you've been to, then add all your favourite gaming. Bowling, karaoke, darts, pool, shuffleoard AND arcades...\r\nCheck 'em all out at Lane7 Cardiff",
+    "address": "-",
+    "latitude": 51.4816,
+    "longitude": -3.1791,
+    "phone": "00000 000000",
+    "email": "loremipsum@loremipsum.com",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/#",
+    "opening_hours": "Monday – Thursday: - | Friday - Saturday: - | Sunday: -",
+    "images": []
+  },
+  {
+    "id": 350,
+    "slug": "berlin",
+    "title": "Berlin",
+    "hero_title": "Bowling in Berlin",
+    "description": "Choose from boutique bowling, shuffleboard, beer-pong, karaoke, darts and a golf course - or just do it all! Welcome to Lane7 Berlin.",
+    "address": "Linkstraße 2, 10785 Berlin, Germany",
+    "latitude": 52.5009,
+    "longitude": 13.3759,
+    "phone": "+49 69 71045260",
+    "email": "bookings@lane7.de",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/07/Lane7_SummerMenu-Berlin.pdf",
+    "opening_hours": "Sunday - Thursday: 12pm - 12am | Friday and Saturday: 12pm - 1am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "berlin-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Berlin-1.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "berlin-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/LSP_Lane7_2_LSP5886-1-1-scaled.webp"
+      },
+      {
+        "type": "map",
+        "filename": "berlin-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/BerlinMap-1.webp"
+      }
+    ]
+  },
+  {
+    "id": 218,
+    "slug": "aberdeen",
+    "title": "Aberdeen",
+    "hero_title": "Aberdeen Bowling and Games Bar",
+    "description": "With six bowling lanes to choose from, alongside pool, ping-pong, shuffleboard, arcades and a bar, Lane7 Aberdeen is home to all your best nights in one. ",
+    "address": "1 SHIPROW, ABERDEEN, AB11 5BY",
+    "latitude": 57.1497,
+    "longitude": -2.0943,
+    "phone": "01224 596999",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/aberdeen-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-2-v2.pdf",
+    "opening_hours": "Monday – Thursday: 4pm - 11pm | Friday - Saturday: 11am - 1am | Sunday: 11am - 11pm",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "aberdeen-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Aberdeen.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "aberdeen-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Aberdeen-11.jpg"
+      },
+      {
+        "type": "map",
+        "filename": "aberdeen-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7AberdeenMap-1-1.webp"
+      }
+    ]
+  },
+  {
+    "id": 216,
+    "slug": "bath",
+    "title": "Bath",
+    "hero_title": "Bath Bowling and Games Bar",
+    "description": "Be prepared to have your mind blown when you see how much we've managed to fit into Lane7 Bath. Bowling, beer-pong, darts, pool, curling, shuffleboard, karaoke, ping-pong and more games. Plus a stacked bar to keep you hydrated. What more could you want?",
+    "address": "Saw Close, Bath, BA1 1EY",
+    "latitude": 51.3811,
+    "longitude": -2.359,
+    "phone": "01225 531020",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/bath-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-1-v2.pdf",
+    "opening_hours": "Monday - Thursday: 3pm - 12am | Friday - Sunday: 11am - 1am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "bath-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Bath.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "bath-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Bath-3.webp"
+      },
+      {
+        "type": "map",
+        "filename": "bath-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7BathMap-3-1.png"
+      }
+    ]
+  },
+  {
+    "id": 214,
+    "slug": "birmingham-the-cube",
+    "title": "Birmingham The Cube",
+    "hero_title": "Birmingham Bowling and Games Bar",
+    "description": "Imagine the best bar you've ever been to, then throw in bowling, karaoke, shuffleboard, beer-pong and darts. Welcome to Lane7 Birmingham The Cube. What will you play first?",
+    "address": "Level 6 The Cube, Wharfside Street, Birmingham B1 1RN",
+    "latitude": 52.4781,
+    "longitude": -1.8904,
+    "phone": "0121 2895395",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/birmingham-cube-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-1-v2.pdf",
+    "opening_hours": "Monday, Tuesday and Thursday: 4pm - 12am | Wednesday: 12pm - 12am  | Friday and Saturday: 11am - 1am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "birmingham-the-cube-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Birmingham.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "birmingham-the-cube-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Birmingham-Cube-3.webp"
+      },
+      {
+        "type": "map",
+        "filename": "birmingham-the-cube-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7CubeMap-1-1.webp"
+      }
+    ]
+  },
+  {
+    "id": 212,
+    "slug": "birmingham-bullring",
+    "title": "Birmingham The Bullring",
+    "hero_title": "Birmingham Bowling and Games Bar",
+    "description": "Home to the UK's first immersive gaming experience, Playground. \r\nOur biggest venue yet, there isn't a game that we don't have. Bowling, karaoke, shuffleboard, beer pong, darts, shooting pods, Playground, pool and ping pong. We're exhausted, and we haven't even mentioned our retro arcade hall. Welcome to Lane7 Birmingham Bullring.",
+    "address": "The Bullring, L6-L7 The Bullring, 1 Queens Drive, Birmingham, B5 4PJ",
+    "latitude": 52.4774,
+    "longitude": -1.895,
+    "phone": "0121 759 0232",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/birmingham-bullring-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-1-v2.pdf",
+    "opening_hours": "Monday - Thursday: 11am - 1am | Friday:  11am - 2am (last entry 1am) | Saturday: 10am - 2am (last entry 1am)",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "birmingham-bullring-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Birmingham-2.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "birmingham-bullring-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Birmingham-Bullring-1-scaled.webp"
+      },
+      {
+        "type": "map",
+        "filename": "birmingham-bullring-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lan7BullringMap-1.webp"
+      }
+    ]
+  },
+  {
+    "id": 210,
+    "slug": "bristol",
+    "title": "Bristol",
+    "hero_title": "Bristol Bowling and Games Bar",
+    "description": "Bristol, we're spoiling you. Choose from ten bowling lanes, pool, darts, beer-pong, arcades, shooting pods, back shuffle and more. What will you play?",
+    "address": "Unit 2-3, Millennium Promenade, Bristol, BS1 5SZ",
+    "latitude": 51.4538,
+    "longitude": -2.5973,
+    "phone": "01174 320009",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/bristol-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-1-v2.pdf",
+    "opening_hours": "Monday –Thursday: 3pm – 12am | Friday and Saturday: 11am - 1am | Sunday: 11am - 12am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "bristol-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Bristol.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "bristol-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Bristol-3.webp"
+      },
+      {
+        "type": "map",
+        "filename": "bristol-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7BristolMap-1.webp"
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "slug": "durham",
+    "title": "Durham",
+    "hero_title": "Durham Bowling and Games Bar",
+    "description": "Choose from boutique bowling, duck-pin bowling, darts, pool, batting cages, shuffleboard, back shuffle and beer-pong at Lane7 Durham. Then hit up our bar when you need a break.",
+    "address": "6B - 6C Walkergate, Durham, DH1 1SQ",
+    "latitude": 54.7753,
+    "longitude": -1.5849,
+    "phone": "0191 8155300",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/durham-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-2-v2.pdf",
+    "opening_hours": "Monday - Thursday: 4pm - 12am | Friday - Sunday: 11am - 1am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "durham-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Durham.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "durham-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Durham-1.webp"
+      },
+      {
+        "type": "map",
+        "filename": "durham-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7DurhamMap.webp"
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "slug": "edinburgh",
+    "title": "Edinburgh",
+    "hero_title": "Edinburgh Bowling and Games Bar",
+    "description": "Imagine the best bar you've ever been to and then add in bowling, mini golf, darts, pool, shuffleboard, shooting pods and arcades. Welcome to Lane7 Edinburgh. Seriously, what more could you want?",
+    "address": "Floor 4.02b St James Square, St James Quarter, Edinburgh, EH1 3AD",
+    "latitude": 55.9533,
+    "longitude": -3.1883,
+    "phone": "0131 3730003",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/edinburgh-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-1-v2.pdf",
+    "opening_hours": "Monday - Thursday: 11am - 12am | Friday: 11am - 1am | Saturday: 10am - 1am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "edinburgh-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Edinburgh.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "edinburgh-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Edinburgh-1.webp"
+      },
+      {
+        "type": "map",
+        "filename": "edinburgh-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7EdinburghMap-1.webp"
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "slug": "sheffield",
+    "title": "Sheffield",
+    "hero_title": "Sheffield Bowling and Games Bar",
+    "description": "Imagine the best bar you've ever been to, but add in bowling lanes, pool tables, darts, beer-pong, shuffleboard and ping-pong. Welcome to Lane7 Sheffield. You've been dreaming about this place…and we knew it.",
+    "address": "1-5 The Moor, Matilda Street, Sheffield City Centre, Sheffield, S1 4PF",
+    "latitude": 53.3781,
+    "longitude": -1.469,
+    "phone": "01143 498118",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/sheffield-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-2-v2.pdf",
+    "opening_hours": "Monday – Thursday: 4pm – 12am | Friday and Saturday: 11am – 1am | Sunday: 11am - 12am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "sheffield-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Sheffield.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "sheffield-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Sheffield-3.webp"
+      },
+      {
+        "type": "map",
+        "filename": "sheffield-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7SheffieldMap.png"
+      }
+    ]
+  },
+  {
+    "id": 199,
+    "slug": "london-victoria",
+    "title": "London Victoria",
+    "hero_title": "London Bowling and Games Bar",
+    "description": "Next level bowling, mini golf, shuffleboard, beer pong and augmented darts, as well as Victoria's best kept secret: Play Dirty - a secret basement arcade hall for adults. Welcome to Lane7 London Victoria.",
+    "address": "Zig Zag Building, 70 Victoria Street, London, SW1E 6SQ",
+    "latitude": 51.4994,
+    "longitude": -0.1319,
+    "phone": "020 3924 0918",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/london-victoria-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-0-v2-8.pdf",
+    "opening_hours": "Monday – Thursday: 11am - 12am | Friday and Saturday: 11am - 12:30am | Sunday: 12pm - 11pm",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "london-victoria-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/London-1.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "london-victoria-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/London-3.webp"
+      },
+      {
+        "type": "map",
+        "filename": "london-victoria-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7LondonMap.webp"
+      }
+    ]
+  },
+  {
+    "id": 197,
+    "slug": "liverpool",
+    "title": "Liverpool",
+    "hero_title": "Liverpool Bowling and Games Bar",
+    "description": "Imagine the best bar you've ever been to, but with bowling, pool, ping-pong, shufleboard, beer-pong and 'Three Arrows', a dedicated darts pub, thrown into the mix. Welcome to Lane7 Liverpool.",
+    "address": "Clayton Square Shopping Centre, Great Charlotte Street, Liverpool L1 1QR",
+    "latitude": 53.4084,
+    "longitude": -2.9916,
+    "phone": "0151 3192545",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/liverpool-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-2-v2.pdf",
+    "opening_hours": "Monday – Thursday: 4pm – 12am | Friday - Sunday: 11am – 1am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "liverpool-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Liverpool.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "liverpool-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Liverpool-2.webp"
+      },
+      {
+        "type": "map",
+        "filename": "liverpool-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7LiverpoolMap.webp"
+      }
+    ]
+  },
+  {
+    "id": 194,
+    "slug": "leicester",
+    "title": "Leicester",
+    "hero_title": "Leicester Bowling and Sports Bar",
+    "description": "We're Leicester's best bowling alley with a sports bar twist - but with so much more. Big screens. Mini golf. Maximum gaming. Two outdoor areas. What more could you want from Lane7 Leicester?",
+    "address": "Grand Central Station, Great Central Street, Leicester LE1 4JT",
+    "latitude": 52.6369,
+    "longitude": -1.1398,
+    "phone": "01164 664990",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/leicester-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-2-v2.pdf",
+    "opening_hours": "Monday – Thursday: 3pm – 12am | Friday and Saturday: 11am – 12am | Sunday: 11am - 12am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "leicester-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Leicester.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "leicester-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Leicester-3.webp"
+      },
+      {
+        "type": "map",
+        "filename": "leicester-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7LeicesterMap-2.webp"
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "slug": "newcastle",
+    "title": "Newcastle",
+    "hero_title": "Newcastle Bowling and Games Bar",
+    "description": "Our OG venue, this one is close to our hearts. Three floors jampacked with bowling, karaoke, gaming, drinks and food. Lane7 Newcastle brings it EVERY. SINGLE. TIME. ",
+    "address": "80-90 Saint James' Boulevard, Newcastle-upon-Tyne, NE1 4BN",
+    "latitude": 54.9783,
+    "longitude": -1.6178,
+    "phone": "0191 2616161",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/newcastle-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-1-v2.pdf",
+    "opening_hours": "Monday - Thursday: 4pm - 12am | Friday and Saturday: 11am - 1am | Sunday: 11am - 12am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "newcastle-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Newcastle.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "newcastle-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Newcastle-3-scaled.webp"
+      },
+      {
+        "type": "map",
+        "filename": "newcastle-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7NewcastleMap.webp"
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "slug": "manchester-deansgate",
+    "title": "Manchester Deansgate",
+    "hero_title": "Manchester Bowling and Games Bar",
+    "description": "With eleven bowling lanes to choose from, alongside next level gaming, karaoke, arcades and a wraparound bar to keep you refreshed, there’s plenty to keep you occupied at Lane7 Manchester.",
+    "address": "Unit 3, 235 Deansgate, Manchester, M3 4EN",
+    "latitude": 53.4808,
+    "longitude": -2.2426,
+    "phone": "0161 5100034",
+    "email": "",
+    "booking_url": "https://booking.lane7stage.wpenginepowered.com/manchester-booking/",
+    "menu_url": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2025/03/Lane7_Winter24Menu-Tier-1-v2.pdf",
+    "opening_hours": "Monday - Thursday: 3pm - 12am | Friday - Saturday: 11am - 1am | Sunday: 11am - 12am",
+    "images": [
+      {
+        "type": "hero_logo",
+        "filename": "manchester-deansgate-hero-logo.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Manchester.svg"
+      },
+      {
+        "type": "hero_image",
+        "filename": "manchester-deansgate-hero-image.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Manchester-1-scaled.webp"
+      },
+      {
+        "type": "map",
+        "filename": "manchester-deansgate-map.jpg",
+        "originalUrl": "https://lane7stage.wpenginepowered.com/wp-content/uploads/2024/05/Lane7ManchesterMap.webp"
+      }
+    ]
+  }
+]
