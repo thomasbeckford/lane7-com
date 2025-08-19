@@ -9,6 +9,7 @@ import { ArchiveBlock } from '@/blocks/core/ArchiveBlock/Component'
 import { CallToActionBlock } from '@/blocks/core/CallToAction/Component'
 import { ContentBlock } from '@/blocks/core/Content/Component'
 import { FormBlock } from '@/blocks/core/Form/Component'
+import { HeroWithCTABlock } from '@/blocks/core/HeroWithCTA/Component'
 import { NavCardBlock } from '@/blocks/navigation/NavCard/Component'
 
 const blockComponents = {
@@ -20,6 +21,7 @@ const blockComponents = {
   navCardBlock: NavCardBlock,
   testimonials: TestimonialBlock,
   mediaTextBlock: MediaTextBlock,
+  heroWithCTA: HeroWithCTABlock,
 }
 
 export const RenderBlocks: React.FC<{

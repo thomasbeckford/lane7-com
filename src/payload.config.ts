@@ -7,6 +7,7 @@ import sharp from 'sharp' // sharp-import
 import { fileURLToPath } from 'url'
 
 import { defaultLexical } from '@/fields/defaultLexical'
+import { Backups } from './collections/Backups'
 import { Categories } from './collections/Categories'
 import { Media } from './collections/Media'
 import { Pages } from './collections/Pages'
@@ -30,6 +31,11 @@ export default buildConfig({
       // The `BeforeDashboard` component renders the 'welcome' block that you see after logging into your admin panel.
       // Feel free to delete this at any time. Simply remove the line below.
       beforeDashboard: ['@/components/BeforeDashboard'],
+      views: {
+        backups: {
+          Component: './components/BackupManager',
+        },
+      },
     },
     importMap: {
       baseDir: path.resolve(dirname),
@@ -63,7 +69,7 @@ export default buildConfig({
   db: mongooseAdapter({
     url: process.env.DATABASE_URI || '',
   }),
-  collections: [Pages, Posts, Media, Categories, Users, Venues],
+  collections: [Pages, Posts, Media, Categories, Users, Venues, Backups],
   cors: [getServerSideURL()].filter(Boolean),
   globals: [Header, Footer],
   plugins: [

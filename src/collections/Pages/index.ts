@@ -9,6 +9,7 @@ import { Archive } from '../../blocks/core/ArchiveBlock/config'
 import { CallToAction } from '../../blocks/core/CallToAction/config'
 import { Content } from '../../blocks/core/Content/config'
 import { FormBlock } from '../../blocks/core/Form/config'
+import { HeroWithCTA } from '../../blocks/core/HeroWithCTA/config'
 import { NavCardBlock } from '../../blocks/navigation/NavCard/config'
 import { populatePublishedAt } from '../../hooks/populatePublishedAt'
 import { generatePreviewPath } from '../../utilities/generatePreviewPath'
@@ -87,6 +88,7 @@ export const Pages: CollectionConfig<'pages'> = {
                 NavCardBlock,
                 Testimonials,
                 MediaTextBlock,
+                HeroWithCTA,
               ],
               required: true,
               admin: {

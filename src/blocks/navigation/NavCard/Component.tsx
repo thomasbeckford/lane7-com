@@ -1,14 +1,16 @@
 // NavCardBlock.tsx - NO need for 'use client'
+import type { Page } from '@/payload-types'
 import React from 'react'
 import { NavigationCard } from './NavigationCard'
-import type { NavigationCardsType } from './types'
 
-export const NavCardBlock: React.FC<NavigationCardsType> = ({
+type NavCardType = Extract<Page['layout'][number], { blockType: 'navCardBlock' }>
+
+export const NavCardBlock: React.FC<NavCardType> = ({
   heading,
   subheading,
-  cards = [],
-  variant = 'default',
-  gridColumns = 2,
+  cards,
+  variant,
+  gridColumns = '2',
 }) => {
   return (
     <section className="py-16 bg-black text-white">
@@ -25,12 +27,12 @@ export const NavCardBlock: React.FC<NavigationCardsType> = ({
         <div
           className="grid gap-6"
           style={{
-            gridTemplateColumns: `repeat(${Math.min(gridColumns, cards.length)}, 1fr)`,
+            gridTemplateColumns: `repeat(${Math.min(parseInt(gridColumns || '2'), cards?.length || 0)}, 1fr)`,
           }}
         >
-          {cards.map((card, index) => (
-            <NavigationCard key={card.id || index} card={card} variant={variant} />
-          ))}
+          {cards?.map((card, index) => {
+            return <NavigationCard key={index} card={card} variant={variant || 'default'} />
+          })}
         </div>
       </div>
     </section>

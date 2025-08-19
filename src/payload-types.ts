@@ -73,6 +73,7 @@ export interface Config {
     categories: Category;
     users: User;
     venues: Venue;
+    backups: Backup;
     redirects: Redirect;
     forms: Form;
     'form-submissions': FormSubmission;
@@ -90,6 +91,7 @@ export interface Config {
     categories: CategoriesSelect<false> | CategoriesSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     venues: VenuesSelect<false> | VenuesSelect<true>;
+    backups: BackupsSelect<false> | BackupsSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     forms: FormsSelect<false> | FormsSelect<true>;
     'form-submissions': FormSubmissionsSelect<false> | FormSubmissionsSelect<true>;
@@ -346,6 +348,69 @@ export interface Page {
         id?: string | null;
         blockName?: string | null;
         blockType: 'mediaTextBlock';
+      }
+    | {
+        /**
+         * Type of hero section
+         */
+        variant?: ('basic' | 'newsletter' | 'promo') | null;
+        /**
+         * Background image for the hero
+         */
+        backgroundImage: string | Media;
+        /**
+         * Dark overlay opacity (0-100%)
+         */
+        overlayOpacity?: number | null;
+        /**
+         * Small text above main heading (e.g., "GO ALL IN")
+         */
+        eyebrow?: string | null;
+        /**
+         * Main heading text
+         */
+        heading: string;
+        /**
+         * Description text below heading
+         */
+        subheading?: string | null;
+        primaryButton: {
+          text: string;
+          type?: ('reference' | 'custom') | null;
+          reference?: {
+            relationTo: 'pages';
+            value: string | Page;
+          } | null;
+          url?: string | null;
+        };
+        secondaryButton?: {
+          text?: string | null;
+          type?: ('reference' | 'custom') | null;
+          reference?: {
+            relationTo: 'pages';
+            value: string | Page;
+          } | null;
+          url?: string | null;
+        };
+        newsletterSettings?: {
+          placeholderText?: string | null;
+          buttonText?: string | null;
+        };
+        promoSettings?: {
+          /**
+           * Additional promotional text (e.g., "Available Sunday - Friday")
+           */
+          promoText?: string | null;
+          /**
+           * Small disclaimer text
+           */
+          disclaimer?: string | null;
+        };
+        textAlignment?: ('center' | 'left' | 'right') | null;
+        verticalPosition?: ('center' | 'top' | 'bottom') | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'heroWithCTA';
       }
   )[];
   meta?: {
@@ -952,6 +1017,33 @@ export interface Venue {
   _status?: ('draft' | 'published') | null;
 }
 /**
+ * Gestión de backups de la base de datos
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "backups".
+ */
+export interface Backup {
+  id: string;
+  /**
+   * Nombre descriptivo del backup
+   */
+  name: string;
+  /**
+   * Fecha y hora de creación
+   */
+  date: string;
+  /**
+   * Nombre del archivo en el servidor
+   */
+  filename: string;
+  /**
+   * Tamaño del archivo en bytes
+   */
+  size?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "redirects".
  */
@@ -1149,6 +1241,10 @@ export interface PayloadLockedDocument {
         value: string | Venue;
       } | null)
     | ({
+        relationTo: 'backups';
+        value: string | Backup;
+      } | null)
+    | ({
         relationTo: 'redirects';
         value: string | Redirect;
       } | null)
@@ -1316,6 +1412,48 @@ export interface PagesSelect<T extends boolean = true> {
               backgroundColor?: T;
               textColor?: T;
               verticalAlignment?: T;
+              id?: T;
+              blockName?: T;
+            };
+        heroWithCTA?:
+          | T
+          | {
+              variant?: T;
+              backgroundImage?: T;
+              overlayOpacity?: T;
+              eyebrow?: T;
+              heading?: T;
+              subheading?: T;
+              primaryButton?:
+                | T
+                | {
+                    text?: T;
+                    type?: T;
+                    reference?: T;
+                    url?: T;
+                  };
+              secondaryButton?:
+                | T
+                | {
+                    text?: T;
+                    type?: T;
+                    reference?: T;
+                    url?: T;
+                  };
+              newsletterSettings?:
+                | T
+                | {
+                    placeholderText?: T;
+                    buttonText?: T;
+                  };
+              promoSettings?:
+                | T
+                | {
+                    promoText?: T;
+                    disclaimer?: T;
+                  };
+              textAlignment?: T;
+              verticalPosition?: T;
               id?: T;
               blockName?: T;
             };
@@ -1631,6 +1769,18 @@ export interface VenuesSelect<T extends boolean = true> {
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "backups_select".
+ */
+export interface BackupsSelect<T extends boolean = true> {
+  name?: T;
+  date?: T;
+  filename?: T;
+  size?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

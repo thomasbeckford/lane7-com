@@ -4,39 +4,13 @@
 
 import { CMSLink } from '@/components/Link'
 import { Media } from '@/components/Media'
-import { Media as MediaResource } from '@/payload-types'
+import { Page } from '@/payload-types'
+
 import React, { useState } from 'react'
 
-type Props = {
-  variant?: 'basic' | 'newsletter' | 'promo'
-  backgroundImage?: MediaResource
-  overlayOpacity?: number
-  eyebrow?: string
-  heading?: string
-  subheading?: string
-  primaryButton?: {
-    text: string
-    type: 'reference' | 'custom'
-    url?: string
-  }
-  secondaryButton?: {
-    text?: string
-    type?: 'reference' | 'custom'
-    url?: string
-  }
-  newsletterSettings?: {
-    placeholderText?: string
-    buttonText?: string
-  }
-  promoSettings?: {
-    promoText?: string
-    disclaimer?: string
-  }
-  textAlignment?: 'center' | 'left' | 'right'
-  verticalPosition?: 'center' | 'top' | 'bottom'
-}
+type HeroWithCTABlockType = Extract<Page['layout'][number], { blockType: 'heroWithCTA' }>
 
-export const HeroWithCTA: React.FC<Props> = ({
+export const HeroWithCTABlock: React.FC<HeroWithCTABlockType> = ({
   variant = 'basic',
   backgroundImage,
   overlayOpacity = 50,
@@ -95,7 +69,10 @@ export const HeroWithCTA: React.FC<Props> = ({
       )}
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black" style={{ opacity: overlayOpacity / 100 }} />
+      <div
+        className="absolute inset-0 bg-black"
+        style={{ opacity: overlayOpacity ? overlayOpacity / 100 : 50 }}
+      />
 
       {/* Content */}
       <div
