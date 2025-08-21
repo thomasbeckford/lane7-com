@@ -5,14 +5,19 @@ import { NextRequest, NextResponse } from 'next/server'
 import path from 'path'
 import { getPayload } from 'payload'
 
-export async function DELETE(request: NextRequest, { params }: { params: { id: string } }) {
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> },
+) {
   try {
+    const { id } = await params
+
     const payload = await getPayload({ config: configPromise })
 
     // Obtener info del backup
     const backup = await payload.findByID({
       collection: 'backups',
-      id: params.id,
+      id,
     })
 
     // Eliminar archivo físico
@@ -25,7 +30,7 @@ export async function DELETE(request: NextRequest, { params }: { params: { id: s
     // Eliminar registro de Payload
     await payload.delete({
       collection: 'backups',
-      id: params.id,
+      id,
     })
 
     return NextResponse.json({

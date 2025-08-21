@@ -33,7 +33,7 @@ export default buildConfig({
       beforeDashboard: ['@/components/BeforeDashboard'],
       views: {
         backups: {
-          Component: './components/BackupManager',
+          Component: '@/components/BackupManager',
         },
       },
     },

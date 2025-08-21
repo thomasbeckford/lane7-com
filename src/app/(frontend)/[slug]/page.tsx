@@ -57,6 +57,19 @@ export default async function Page({ params: paramsPromise }: Args) {
 
   const { hero, layout } = page
 
+  const homePageHero = () => (
+    <div className="w-full h-[56.25vw]">
+      <iframe
+        src="https://iframe.mediadelivery.net/embed/238498/45b037ff-b45d-48e4-8aef-959ea273fcbd?autoplay=true&loop=true&muted=false&preload=true&responsive=true"
+        loading="lazy"
+        allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+        allowFullScreen
+      ></iframe>
+    </div>
+  )
+
+  console.log('slug', slug)
+
   return (
     <article>
       <PageClient />
@@ -65,7 +78,7 @@ export default async function Page({ params: paramsPromise }: Args) {
 
       {draft && <LivePreviewListener />}
 
-      <RenderHero {...hero} />
+      {slug === '' ? homePageHero() : <RenderHero {...hero} />}
       <RenderBlocks blocks={layout} />
     </article>
   )

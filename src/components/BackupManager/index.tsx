@@ -11,8 +11,7 @@ interface Backup {
   filename: string
   size: number
 }
-
-export const BackupManager: React.FC = () => {
+const BackupManager: React.FC = () => {
   const { user } = useAuth()
   const [backups, setBackups] = useState<Backup[]>([])
   const [loading, setLoading] = useState(false)
@@ -390,3 +389,5 @@ export const BackupManager: React.FC = () => {
     </div>
   )
 }
+
+export default BackupManager
